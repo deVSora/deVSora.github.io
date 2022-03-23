@@ -329,6 +329,7 @@ h1 {
     padding: 12px 10px;
     width: 150px;
     text-align: center;
+    margin-right: 10px;
 }
 
 .btn-project-view:hover {

@@ -1,3 +1,4 @@
+// Usando XHR para o carregamento de páginas dinamicas  
 const request = obj => {
     return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
@@ -14,6 +15,7 @@ const request = obj => {
     });
 };
 
+// Função para pegar evento de click
 document.addEventListener('click', e => {
     const el = e.target;
 
@@ -23,6 +25,7 @@ document.addEventListener('click', e => {
     }
 });
 
+//Função para carregar a página dinamica pegando o href
 async function loadPage(el) {
     let href = el.getAttribute('href');
 
@@ -43,6 +46,7 @@ async function loadPage(el) {
     }
 }
 
+//Função para carregar o resultado do carregamento da página por href
 function loadResult(response) {
     const aboutContainer = document.querySelector('.about-container');
     aboutContainer.innerHTML = response;
