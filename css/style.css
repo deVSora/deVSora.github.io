@@ -200,36 +200,44 @@ h1 {
     .container {
         flex-direction: column;
     }
+
     .bio-container {
         min-height: auto;
         border-right: none;
         border-bottom: 5px solid var(--bio-border-color);
     }
+
     .bio-container h2 {
         display: none;
     }
+
     .bio-container p {
         max-width: 60%;
         margin: 10px auto;
     }
+
     .about-container {
         text-align: center;
         padding: 30px;
     }
+
     .about-container .description {
         margin: 10px auto;
         max-width: 100%;
         line-height: 26px;
     }
+
     .btn-projects {
         margin: 20px auto;
     }
+
     .skills-box {
         flex: 1 1 100%;
         max-width: 100%;
         margin-bottom: 40px;
         text-align: left;
     }
+
     .skills-box i {
         font-size: 60px;
     }
@@ -292,6 +300,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
+    min-height: 70px;
 }
 
 .project-block i {
@@ -322,6 +331,10 @@ h1 {
     text-align: center;
 }
 
+.btn-project-view:hover {
+    background-color: var(--about-bg-color);
+}
+
 .btn-project-code-view {
     font-weight: bold;
     font-size: 16px;
@@ -335,4 +348,73 @@ h1 {
     padding: 12px 10px;
     width: 175px;
     text-align: center;
+}
+
+.btn-project-code-view:hover {
+    background-color: var(--about-bg-color);
+}
+
+
+/* Mobile */
+@Media(max-width: 1100px) {
+    .name-icon {
+        display: none;
+    }
+
+    .project-block {
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        min-height: 170px;
+    }
+
+    .project-icons {
+        margin-bottom: 15px;
+    }
+
+    .project-block i {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+
+    .project-block ion-icon {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+}
+
+@Media(max-width: 350px) {
+    .name-icon {
+        display: none;
+    }
+
+    .project-block {
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        min-height: 170px;
+    }
+
+    .project-icons {
+        margin-top: 15px;
+    }
+
+    .project-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .project-block i {
+        font-size: 50px;
+        margin-left: 10px;
+    }
+
+    .project-block ion-icon {
+        font-size: 50px;
+        margin-left: 10px;
+    }
 }
