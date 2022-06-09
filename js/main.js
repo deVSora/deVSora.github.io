@@ -50,4 +50,16 @@ async function loadPage(el) {
 function loadResult(response) {
     const aboutContainer = document.querySelector('.about-container');
     aboutContainer.innerHTML = response;
-}
+};
+
+//Dicenator (Calculadora de dados) - Abre uma nova aba
+document.addEventListener('click', e => {
+    e.preventDefault();
+    el = e.target
+
+    if (el.id == 'dicenator') {
+        const width = (screen.width / 2) - 150;
+        const height = (screen.height / 2) - 400;
+        window.open('dicenator.html', '_blank', `width=400, height=600, screenX=${width}, screenY=${height}`)
+    }
+})

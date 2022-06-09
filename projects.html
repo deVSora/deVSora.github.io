@@ -1,68 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - deVSora</title>
-    <!-- Google fonts-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <!-- Dev icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <!-- Css -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <main class="project-container">
-        <div class="about-project">
-            <h1>Meus Projetos</h1>
-            <p class="description">Aqui você encontrará meus <span class="highlight">projetos</span> e <span
-                    class="highlight">mini-projetos</span> públicos, também o <span class="highlight">código
-                    fonte</span> dos mesmos.</p>
-            <p class="description">As <span
-                    class="highlight">tecnologias</span> utilizadas e o estado atual do projeto serão apresentados, o
-                estado do projeto está assim como indicado na <span class="highlight">legenda</span> abaixo.
+<main class="project-container">
+    <div class="about-project">
+        <h1>Meus Projetos</h1>
+        <p class="description">Aqui você encontrará meus <span class="highlight">projetos</span> e <span
+                class="highlight">mini-projetos</span> públicos, também o <span class="highlight">código
+                fonte</span> dos mesmos.</p>
+        <p class="description">As <span class="highlight">tecnologias</span> utilizadas e o estado atual do projeto
+            serão apresentados, o
+            estado do projeto está assim como indicado na <span class="highlight">legenda</span> abaixo.
+    </div>
+    <section class="subtitle-container">
+        <div class="code-complete">
+            <ion-icon name="code-slash-outline"></ion-icon>
+            Projeto finalizado.
         </div>
-        <section class="subtitle-container">
-            <div class="code-complete">
+        <div class="code-in-progress">
+            <ion-icon name="code-working-outline"></ion-icon>
+            Projeto em progresso.
+        </div>
+    </section>
+    <a href="index.html" class="btn-projects">
+        <ion-icon name="person-circle-outline"></ion-icon><span>Ver perfil</span>
+    </a>
+    <section class="projects-container">
+        <div class="project-block">
+            <ion-icon name="chevron-forward-circle" class="name-icon"></ion-icon>
+            <a class="project-name">Dicenator</a>
+            <div class="project-icons">
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
                 <ion-icon name="code-slash-outline"></ion-icon>
-                Projeto finalizado.
             </div>
-            <div class="code-in-progress">
-                <ion-icon name="code-working-outline"></ion-icon>
-                Projeto em progresso.
+            <div class="project-buttons">
+                <a href="#" class="btn-project-view" id="dicenator">Visualizar Site
+                </a>
+                <a href="#" class="btn-project-code-view">Visualizar Código</a>
             </div>
-        </section>
-        <a href="index.html" class="btn-projects">
-            <ion-icon name="person-circle-outline"></ion-icon><span>Ver perfil</span>
-        </a>
-        <section class="projects-container">
-            <div class="project-block">
-                <ion-icon name="chevron-forward-circle" class="name-icon"></ion-icon>
-                <a class="project-name">Landing Page</a>
-                <div class="project-icons">
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                </div>
-                <div class="project-buttons">
-                    <a href="#" class="btn-project-view">Visualizar Site
-                    </a>
-                    <a href="#" class="btn-project-code-view">Visualizar Código</a>
-                </div>
-                <p></p>
-            </div>
-        </section>
-    </main>
-    <!--Ion icons-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!--JS main archive-->
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+            <p></p>
+        </div>
+    </section>
+</main>

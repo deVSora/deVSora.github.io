@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicenator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/dicenator.css">
+</head>
+
+<body>
+    <main>
+        <section class="content">
+            <table>
+                <tr>
+                    <td colspan="4"><input type='text' class='display'></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-clear">C</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">(</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">)</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-del">&laquo;</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-num">7</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">8</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">9</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">*</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-num">4</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">5</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">6</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-num">1</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">2</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">3</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-num">.</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">0</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">/</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-num">d</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><button class="btn btn-eq">Lançar/Calcular</button></td>
+                </tr>
+            </table>
+        </section>
+        <section class="content">
+            <h2 class="h2-dicenator">
+                Resultado
+            </h2>
+            <p class="result">
+
+            </p>
+        </section>
+        <section class="content">
+            <h2 class="h2-dicenator">
+                Histórico
+            </h2>
+            <div class="historic">
+
+            </div>
+        </section>
+    </main>
+    <script src="./js/dicenator.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
