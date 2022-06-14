@@ -122,6 +122,7 @@ function Calculadora() {
             }
             result.innerText = `${expression} = ${rollOut[0]} (${diceList})`
             p.innerText = `${expression} = ${rollOut[0]} (${diceList})`
+            this.display.value = rollOut[0];
             historic.appendChild(p)
             line.innerText = `---------------------------------`
             historic.appendChild(line)
