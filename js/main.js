@@ -62,4 +62,9 @@ document.addEventListener('click', e => {
         const height = (screen.height / 2) - 400;
         window.open('dicenator.html', '_blank', `width=400, height=600, screenX=${width}, screenY=${height}`)
     }
+    if (el.id == 'dicenator_code') {
+        const width = screen.width;
+        const height = screen.height;
+        window.open('https://github.com/deVSora/deVSora.github.io', '_blank', `width=${width}, height=${height}`)
+    }
 })

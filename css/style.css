@@ -334,6 +334,7 @@ h1 {
 
 .btn-project-view:hover {
     background-color: var(--about-bg-color);
+    cursor: pointer;
 }
 
 .btn-project-code-view {
@@ -353,6 +354,7 @@ h1 {
 
 .btn-project-code-view:hover {
     background-color: var(--about-bg-color);
+    cursor: pointer;
 }
 
 
